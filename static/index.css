@@ -1,0 +1,39 @@
+body {
+  background: #222;
+}
+#grid {
+  background: #ddd;
+  /* display: inline-block; */
+  padding: 22px;
+  border-radius: 12px;
+}
+.row {
+  margin-right: -13px;
+  display: flex;
+}
+.row:last-child {
+  margin-bottom: -13px;
+}
+.cell {
+  flex: 1 0 auto;
+  height: auto;
+  display: inline-block;
+  /* width: 22px; */
+  /* height: 22px; */
+  background: white;
+  margin-right: 1.4%;
+  margin-bottom: 1.4%;
+  border-radius: 3px;
+}
+.cell:before {
+    content: '';
+    float: left;
+    padding-top: 100%;
+}
+.cell .value {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  background: #f2bb13;
+  opacity: 0;
+}
